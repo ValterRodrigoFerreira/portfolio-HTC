@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/*--primary colors--*/
+/*--white--*/
+/*--black--*/
+/*--gray--*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf.css");
+  src: url("../fonts/icomoon.eot.css") format("embedded-opentype"), url("../fonts/icomoon.woff.css") format("woff");
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #1c1b1b;
+}
+
+li {
+  list-style: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero__headline {
+  width: 48%;
+}
+@media screen and (max-width: 768px) {
+  .hero__headline {
+    width: 100%;
+  }
+}
+.hero__headline h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  color: #0a0909;
+}
+.hero__headline p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #444444;
+}
+.hero__headline img {
+  width: 32px;
+}
+.hero__image {
+  width: 48%;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  width: 148px;
+  height: 54px;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #232f34;
+}
+
+.btn-primary {
+  background-color: #f9aa33;
+  transition: 0.5s ease;
+}
+.btn-primary:hover {
+  filter: brightness(0.9);
+  color: #ffffff;
+}
+
+.header {
+  padding: 24px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #232f34;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-style: normal;
+  font-weight: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+.header__logo--lio {
+  color: #f9aa33;
+}
+.header__nav--menu {
+  display: flex;
+  align-items: center;
+}
+.header__nav--menu--link {
+  margin-right: 24px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+}
+.header__nav--menu--link:last-child {
+  margin-right: 0;
+}
+.header__nav--menu--link a:hover {
+  color: #f9aa33;
+  transition: 0.5s ease;
+}
+.header__wrapper .icon-sun::before {
+  color: #f9aa33;
+  font-family: "icomoon";
+  content: "\e903";
+  font-size: 32px;
+  color: red;
+}/*# sourceMappingURL=global.css.map */

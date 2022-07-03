@@ -1,0 +1,62 @@
+//font-family: 'Be Vietnam Pro', sans-serif;
+
+.header {
+  padding: 24px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    color: $tertiary-color;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-style: normal;
+    font-weight: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+
+    &--lio {
+      color: $secondary-color;
+    }
+  }
+
+  &__nav {
+    &--menu {
+      display: flex;
+      align-items: center;
+
+      &--link {
+        margin-right: 24px;
+
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          &:hover {
+            color: $secondary-color;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    .icon-sun {
+      &::before {
+        color: $secondary-color;
+        font-family: "icomoon";
+        content: "\e903";
+        font-size: 32px;
+        color: red;
+      }
+    }
+  }
+}

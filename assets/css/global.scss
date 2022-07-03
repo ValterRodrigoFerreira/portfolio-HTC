@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+@import "partius/colors.scss";
+@import "partius/typography";
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+$container-xl: 1440px;
+$container-l: 1280px;
+$container-m: 960px;
+$container-s: 540px;
+
+.container {
+  width: 100%;
+  max-width: $container-l;
+  margin: 0 auto;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $black-light;
+}
+
+li {
+  list-style: none;
+}
+
+@import "partius/layout";
+@import "partius/buttons";
+@import "partius/header";
+@import "partius/footer";

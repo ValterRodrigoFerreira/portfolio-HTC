@@ -1,0 +1,39 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__headline {
+    width: 48%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h2 {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 120%;
+      color: $black-dark;
+    }
+
+    p {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+      color: $gray-3;
+    }
+
+    img {
+      width: 32px;
+    }
+  }
+
+  &__image {
+    width: 48%;
+  }
+}
