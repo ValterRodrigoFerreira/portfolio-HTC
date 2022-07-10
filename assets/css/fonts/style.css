@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?qw3ck2");
-  src: url("fonts/icomoon.eot?qw3ck2#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?qw3ck2") format("truetype"),
-    url("fonts/icomoon.woff?qw3ck2") format("woff"),
-    url("fonts/icomoon.svg?qw3ck2#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?zflx69");
+  src: url("fonts/icomoon.eot?zflx69#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?zflx69") format("truetype"),
+    url("fonts/icomoon.woff?zflx69") format("woff"),
+    url("fonts/icomoon.svg?zflx69#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +14,7 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  /*speak: never;*/
+  /* speak: never; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,18 +26,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-right:before {
+.icon-seta-para-baixo:before {
   content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e904";
 }
 .icon-arrow-up:before {
   content: "\e901";
 }
-.icon-moon:before {
-  content: "\e902";
+.icon-arrow-up-right:before {
+  content: "\e905";
 }
-.icon-sun:before {
+.icon-favIcon:before {
+  content: "\e902";
+  color: #344955;
+}
+.icon-github:before {
+  content: "\e906";
+}
+.icon-monitor:before {
   content: "\e903";
 }
+.icon-moon:before {
+  content: "\e907";
+}
+.icon-sun:before {
+  content: "\e908";
+}
 .icon-twitter:before {
-  content: "\e904";
+  content: "\e909";
 }

@@ -31,7 +31,7 @@
         font-family: "Raleway", sans-serif;
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
+        font-size: calculator-rem(18);
         line-height: 120%;
 
         &:last-child {
@@ -50,12 +50,8 @@
 
   &__wrapper {
     .icon-sun {
-      &::before {
-        color: $secondary-color;
-        font-family: "icomoon";
-        content: "\e903";
-        font-size: 32px;
-        color: red;
+      @include before-icon("\e908", 24px, $secondary-color) {
+        margin-left: 32px;
       }
     }
   }

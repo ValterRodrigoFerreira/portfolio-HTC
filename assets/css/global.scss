@@ -41,6 +41,7 @@ li {
   list-style: none;
 }
 
+@import "partius/mixin";
 @import "partius/layout";
 @import "partius/buttons";
 @import "partius/header";

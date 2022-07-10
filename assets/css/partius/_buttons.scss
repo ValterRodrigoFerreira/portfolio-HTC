@@ -18,6 +18,17 @@
 
   &:hover {
     filter: brightness(0.9);
-    color: $white-light;
+  }
+}
+
+.btn-secundary {
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  margin-left: calculator-rem(32);
+
+  @include after-icon("\e904", 24px, $tertiary-color) {
+    margin-left: calculator-rem(8);
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: calculator-rem(64);
 
   &__headline {
     width: 48%;
@@ -20,20 +21,23 @@
     }
 
     p {
+      margin-top: calculator-rem(48);
       font-family: "Raleway";
       font-style: normal;
       font-weight: 500;
-      font-size: 18px;
+      font-size: calculator-rem(18);
       line-height: 120%;
       color: $gray-3;
+
+      img {
+        max-width: 32px;
+        display: inline-block;
+      }
     }
 
-    img {
-      width: 32px;
+    &--wrapper {
+      margin-top: calculator-rem(48);
+      display: flex;
     }
-  }
-
-  &__image {
-    width: 48%;
   }
 }
