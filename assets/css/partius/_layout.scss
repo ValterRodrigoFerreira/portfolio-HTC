@@ -15,7 +15,7 @@
       font-family: "Raleway";
       font-style: normal;
       font-weight: 700;
-      font-size: 64px;
+      font-size: calculator-rem(64);
       line-height: 120%;
       color: $black-dark;
     }
@@ -30,7 +30,7 @@
       color: $gray-3;
 
       img {
-        max-width: 32px;
+        max-width: calculator-rem(32);
         display: inline-block;
       }
     }
@@ -38,6 +38,16 @@
     &--wrapper {
       margin-top: calculator-rem(48);
       display: flex;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--seta {
+      content: "🡓";
+      color: black;
     }
   }
 }

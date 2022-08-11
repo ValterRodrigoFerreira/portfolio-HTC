@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -60,7 +61,7 @@ li {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 120%;
   color: #0a0909;
 }
@@ -74,12 +75,21 @@ li {
   color: #444444;
 }
 .hero__headline p img {
-  max-width: 32px;
+  max-width: 2rem;
   display: inline-block;
 }
 .hero__headline--wrapper {
   margin-top: 3rem;
   display: flex;
+}
+.hero__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__icon--seta {
+  content: "🡓";
+  color: black;
 }
 
 .btn {
@@ -120,7 +130,7 @@ li {
 }
 
 .header {
-  padding: 24px 0px;
+  padding: 1.5rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,6 +166,15 @@ li {
   color: #f9aa33;
   transition: 0.5s ease;
 }
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper .icon-sun {
+  transition: 0.3s;
+  -webkit-animation: animeted-sun 0.5s ease infinite alternate;
+          animation: animeted-sun 0.5s ease infinite alternate;
+}
 .header__wrapper .icon-sun::before {
   display: inline-block;
   font-family: "icomoon";
@@ -163,5 +182,16 @@ li {
   font-size: 24px;
   color: #f9aa33;
   font-style: normal;
-  margin-left: 32px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+@-webkit-keyframes animeted-sun {
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes animeted-sun {
+  to {
+    transform: translateY(-5px);
+  }
 }/*# sourceMappingURL=global.css.map */

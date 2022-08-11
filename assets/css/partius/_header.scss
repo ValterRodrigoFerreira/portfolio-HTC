@@ -1,7 +1,7 @@
 //font-family: 'Be Vietnam Pro', sans-serif;
 
 .header {
-  padding: 24px 0px;
+  padding: calculator-rem(24) calculator-rem(0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,9 +49,19 @@
   }
 
   &__wrapper {
+    display: flex;
+    align-items: center;
     .icon-sun {
       @include before-icon("\e908", 24px, $secondary-color) {
-        margin-left: 32px;
+        margin-left: calculator-rem(32);
+        cursor: pointer;
+      }
+      transition: 0.3s;
+      animation: animeted-sun 0.5s ease infinite alternate;
+    }
+    @keyframes animeted-sun {
+      to {
+        transform: translateY(-5px);
       }
     }
   }
