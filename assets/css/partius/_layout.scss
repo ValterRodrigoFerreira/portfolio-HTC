@@ -5,7 +5,7 @@
   margin-top: calculator-rem(64);
 
   &__headline {
-    width: 48%;
+    //width: 48%;
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -46,8 +46,14 @@
     align-items: center;
     justify-content: center;
     &--seta {
-      content: "🡓";
-      color: black;
+      @include before-icon("\e909", 24px, $secondary-color) {
+        margin-left: calculator-rem(32);
+        cursor: pointer;
+      }
     }
   }
+}
+
+.experience {
+  margin: calculator-rem(72) auto;
 }

@@ -1,5 +1,9 @@
 //font-family: 'Be Vietnam Pro', sans-serif;
-
+.container.header {
+  &::after {
+    display: none;
+  }
+}
 .header {
   padding: calculator-rem(24) calculator-rem(0);
   display: flex;
