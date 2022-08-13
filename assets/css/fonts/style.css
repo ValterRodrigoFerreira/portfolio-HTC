@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?zflx69");
-  src: url("fonts/icomoon.eot?zflx69#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?zflx69") format("truetype"),
-    url("fonts/icomoon.woff?zflx69") format("woff"),
-    url("fonts/icomoon.svg?zflx69#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?gc2cm");
+  src: url("fonts/icomoon.eot?gc2cm#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?gc2cm") format("truetype"),
+    url("fonts/icomoon.woff?gc2cm") format("woff"),
+    url("fonts/icomoon.svg?gc2cm#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -14,7 +14,7 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  /* speak: never; */
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,34 +26,183 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-seta-para-baixo:before {
+.icon-line-email:before {
+  content: "\e93b";
+}
+.icon-GithubLogo:before {
+  content: "\e91b";
+}
+.icon-airplay:before {
   content: "\e900";
 }
-.icon-arrow-right:before {
-  content: "\e904";
-}
-.icon-arrow-up:before {
+.icon-alert-triangle:before {
   content: "\e901";
 }
-.icon-arrow-up-right:before {
-  content: "\e905";
-}
-.icon-favIcon:before {
+.icon-arrow-right:before {
   content: "\e902";
-  color: #344955;
 }
-.icon-github:before {
-  content: "\e906";
-}
-.icon-monitor:before {
+.icon-arrow-up:before {
   content: "\e903";
 }
-.icon-moon:before {
+.icon-arrow-up-right:before {
+  content: "\e904";
+}
+.icon-at-sign:before {
+  content: "\e905";
+}
+.icon-bell:before {
+  content: "\e906";
+}
+.icon-box:before {
   content: "\e907";
 }
-.icon-sun:before {
+.icon-camera:before {
   content: "\e908";
 }
-.icon-twitter:before {
+.icon-check:before {
   content: "\e909";
+}
+.icon-chevron-down:before {
+  content: "\e90a";
+}
+.icon-circle:before {
+  content: "\e90b";
+}
+.icon-clock:before {
+  content: "\e90c";
+}
+.icon-code:before {
+  content: "\e90d";
+}
+.icon-codepen:before {
+  content: "\e90e";
+}
+.icon-compass:before {
+  content: "\e90f";
+}
+.icon-copy:before {
+  content: "\e910";
+}
+.icon-cpu:before {
+  content: "\e911";
+}
+.icon-database:before {
+  content: "\e912";
+}
+.icon-dollar-sign:before {
+  content: "\e913";
+}
+.icon-droplet:before {
+  content: "\e914";
+}
+.icon-eye:before {
+  content: "\e915";
+}
+.icon-facebook:before {
+  content: "\e916";
+}
+.icon-figma:before {
+  content: "\e917";
+}
+.icon-gift:before {
+  content: "\e918";
+}
+.icon-git-branch:before {
+  content: "\e919";
+}
+.icon-git-commit:before {
+  content: "\e91a";
+}
+.icon-gitlab:before {
+  content: "\e91c";
+}
+.icon-git-merge:before {
+  content: "\e91d";
+}
+.icon-git-pull-request:before {
+  content: "\e91e";
+}
+.icon-globe:before {
+  content: "\e91f";
+}
+.icon-grid:before {
+  content: "\e920";
+}
+.icon-hash:before {
+  content: "\e921";
+}
+.icon-heart:before {
+  content: "\e922";
+}
+.icon-home:before {
+  content: "\e923";
+}
+.icon-instagram:before {
+  content: "\e924";
+}
+.icon-layers:before {
+  content: "\e925";
+}
+.icon-linkedin:before {
+  content: "\e926";
+}
+.icon-lock:before {
+  content: "\e927";
+}
+.icon-map:before {
+  content: "\e928";
+}
+.icon-map-pin:before {
+  content: "\e929";
+}
+.icon-mic:before {
+  content: "\e92a";
+}
+.icon-monitor:before {
+  content: "\e92b";
+}
+.icon-moon:before {
+  content: "\e92c";
+}
+.icon-pen-tool:before {
+  content: "\e92d";
+}
+.icon-search:before {
+  content: "\e92e";
+}
+.icon-send:before {
+  content: "\e92f";
+}
+.icon-settings:before {
+  content: "\e930";
+}
+.icon-share-2:before {
+  content: "\e931";
+}
+.icon-shield:before {
+  content: "\e932";
+}
+.icon-shopping-cart:before {
+  content: "\e933";
+}
+.icon-star:before {
+  content: "\e934";
+}
+.icon-sun:before {
+  content: "\e935";
+}
+.icon-thumbs-up:before {
+  content: "\e936";
+}
+.icon-twitter:before {
+  content: "\e937";
+}
+.icon-user:before {
+  content: "\e938";
+}
+.icon-x:before {
+  content: "\e939";
+}
+.icon-zap:before {
+  content: "\e93a";
 }

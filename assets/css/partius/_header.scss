@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     .icon-sun {
-      @include before-icon("\e908", 24px, $secondary-color) {
+      @include before-icon("\e935", 24px, $secondary-color) {
         margin-left: calculator-rem(32);
         cursor: pointer;
       }

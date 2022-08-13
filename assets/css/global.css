@@ -206,7 +206,6 @@ li {
 .hero {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 4rem;
 }
 @media screen and (max-width: 768px) {
@@ -244,15 +243,60 @@ li {
   align-items: center;
   justify-content: center;
 }
+.hero__icon--seta {
+  transition: 0.3s;
+  -webkit-animation: animate-icon-seta 0.5s ease infinite alternate;
+          animation: animate-icon-seta 0.5s ease infinite alternate;
+}
 .hero__icon--seta::before {
   display: inline-block;
   font-family: "icomoon";
-  content: "\e909";
+  content: "\e90a";
   font-size: 24px;
-  color: #f9aa33;
+  color: #0a0909;
   font-style: normal;
   margin-left: 2rem;
   cursor: pointer;
+}
+@-webkit-keyframes animate-icon-seta {
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes animate-icon-seta {
+  to {
+    transform: translateY(-5px);
+  }
+}
+.hero__email {
+  display: flex;
+  align-items: flex-end;
+}
+.hero__email a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #4a6572;
+  transition: 0.3 ease;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  position: relative;
+}
+.hero__email a:hover {
+  color: #f9aa33;
+}
+.hero__email a::after {
+  content: url(/assets/svg/line-email.svg);
+  position: absolute;
+  display: block;
+  left: 15%;
+  bottom: -10.9375rem;
+  pointer-events: none;
+}
+
+.container.hero {
+  flex-direction: row;
 }
 
 .experience {
@@ -349,7 +393,7 @@ li {
 .header__wrapper .icon-sun::before {
   display: inline-block;
   font-family: "icomoon";
-  content: "\e908";
+  content: "\e935";
   font-size: 24px;
   color: #f9aa33;
   font-style: normal;

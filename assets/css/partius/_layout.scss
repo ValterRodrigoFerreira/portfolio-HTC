@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   margin-top: calculator-rem(64);
 
   &__headline {
@@ -46,12 +46,55 @@
     align-items: center;
     justify-content: center;
     &--seta {
-      @include before-icon("\e909", 24px, $secondary-color) {
+      @include before-icon("\e90a", 24px, $black-dark) {
         margin-left: calculator-rem(32);
         cursor: pointer;
       }
+      transition: 0.3s;
+      animation: animate-icon-seta 0.5s ease infinite alternate;
+
+      @keyframes animate-icon-seta {
+        to {
+          transform: translateY(-5px);
+        }
+      }
     }
   }
+
+  &__email {
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      font-style: normal;
+      font-weight: 700;
+      font-size: calculator-rem(16);
+      line-height: calculator-rem(19);
+      color: $complementary-color;
+      transition: 0.3 ease;
+
+      writing-mode: vertical-lr;
+
+      position: relative;
+
+      &:hover {
+        color: $secondary-color;
+      }
+
+      &::after {
+        content: url(/assets/svg/line-email.svg);
+        position: absolute;
+        display: block;
+        left: 15%;
+        bottom: calculator-rem(-175);
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.container.hero {
+  flex-direction: row;
 }
 
 .experience {
