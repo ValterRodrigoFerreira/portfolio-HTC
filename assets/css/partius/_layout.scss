@@ -20,7 +20,7 @@
       color: $black-dark;
     }
 
-    p {
+    h3 {
       margin-top: calculator-rem(48);
       font-family: "Raleway";
       font-style: normal;
@@ -38,26 +38,6 @@
     &--wrapper {
       margin-top: calculator-rem(48);
       display: flex;
-    }
-  }
-
-  &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &--seta {
-      @include before-icon("\e90a", 24px, $black-dark) {
-        margin-left: calculator-rem(32);
-        cursor: pointer;
-      }
-      transition: 0.3s;
-      animation: animate-icon-seta 0.5s ease infinite alternate;
-
-      @keyframes animate-icon-seta {
-        to {
-          transform: translateY(-5px);
-        }
-      }
     }
   }
 
@@ -97,6 +77,35 @@
   flex-direction: row;
 }
 
-.experience {
-  margin: calculator-rem(72) auto;
+.arrow-down {
+  .icon-arrow-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calculator-rem(48);
+
+    @include before-icon("\e90a", 32px, $black-dark) {
+      margin-left: calculator-rem(32);
+      cursor: pointer;
+    }
+    transition: 0.3s;
+    animation: animate-icon-arrowdown 0.5s ease infinite alternate;
+  }
+}
+
+.skills-content {
+  margin: calculator-rem(124) auto;
+  max-width: $container-l;
+
+  p {
+    width: 60%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: calculator-rem(18);
+    line-height: 120%;
+    color: $gray-2;
+
+    margin-top: calculator-rem(32);
+  }
 }

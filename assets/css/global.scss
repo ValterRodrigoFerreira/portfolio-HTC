@@ -47,8 +47,25 @@ li {
   list-style: none;
 }
 
+.section-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+
+  color: $black-dark;
+}
+
+.section-title-img {
+  max-width: 38px;
+  display: inline-block;
+}
+
 @import "partius/mixin";
 @import "partius/layout";
 @import "partius/buttons";
 @import "partius/header";
 @import "partius/footer";
+@import "partius/animations";

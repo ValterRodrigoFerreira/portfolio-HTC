@@ -11,6 +11,7 @@
 /*--white--*/
 /*--black--*/
 /*--gray--*/
+/*--gray-2--*/
 @font-face {
   font-family: "icomoon";
   src: url("./fonts/icomoon.ttf.css");
@@ -45,6 +46,21 @@ a {
 
 li {
   list-style: none;
+}
+
+.section-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+  color: #0a0909;
+}
+
+.section-title-img {
+  max-width: 38px;
+  display: inline-block;
 }
 
 .grid-1 {
@@ -221,7 +237,7 @@ li {
   line-height: 120%;
   color: #0a0909;
 }
-.hero__headline p {
+.hero__headline h3 {
   margin-top: 3rem;
   font-family: "Raleway";
   font-style: normal;
@@ -230,43 +246,13 @@ li {
   line-height: 120%;
   color: #444444;
 }
-.hero__headline p img {
+.hero__headline h3 img {
   max-width: 2rem;
   display: inline-block;
 }
 .hero__headline--wrapper {
   margin-top: 3rem;
   display: flex;
-}
-.hero__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero__icon--seta {
-  transition: 0.3s;
-  -webkit-animation: animate-icon-seta 0.5s ease infinite alternate;
-          animation: animate-icon-seta 0.5s ease infinite alternate;
-}
-.hero__icon--seta::before {
-  display: inline-block;
-  font-family: "icomoon";
-  content: "\e90a";
-  font-size: 24px;
-  color: #0a0909;
-  font-style: normal;
-  margin-left: 2rem;
-  cursor: pointer;
-}
-@-webkit-keyframes animate-icon-seta {
-  to {
-    transform: translateY(-5px);
-  }
-}
-@keyframes animate-icon-seta {
-  to {
-    transform: translateY(-5px);
-  }
 }
 .hero__email {
   display: flex;
@@ -299,8 +285,39 @@ li {
   flex-direction: row;
 }
 
-.experience {
-  margin: 4.5rem auto;
+.arrow-down .icon-arrow-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  transition: 0.3s;
+  -webkit-animation: animate-icon-arrowdown 0.5s ease infinite alternate;
+          animation: animate-icon-arrowdown 0.5s ease infinite alternate;
+}
+.arrow-down .icon-arrow-down::before {
+  display: inline-block;
+  font-family: "icomoon";
+  content: "\e90a";
+  font-size: 32px;
+  color: #0a0909;
+  font-style: normal;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.skills-content {
+  margin: 7.75rem auto;
+  max-width: 1220px;
+}
+.skills-content p {
+  width: 60%;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #2c2c2c;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -406,6 +423,18 @@ li {
   }
 }
 @keyframes animeted-sun {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes animate-icon-arrowdown {
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes animate-icon-arrowdown {
   to {
     transform: translateY(-5px);
   }
