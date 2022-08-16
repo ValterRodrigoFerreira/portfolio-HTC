@@ -96,16 +96,89 @@
 .skills-content {
   margin: calculator-rem(124) auto;
   max-width: $container-l;
+  padding-top: calculator-rem(0);
+  padding-right: calculator-rem(16);
+  padding-bottom: calculator-rem(0);
+  padding-left: calculator-rem(16);
 
-  p {
-    width: 60%;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 500;
-    font-size: calculator-rem(18);
-    line-height: 120%;
-    color: $gray-2;
+  &--wrapper {
+    padding: 0 16px;
+    .section-description {
+      width: 61%;
 
-    margin-top: calculator-rem(32);
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-2;
+
+      margin-top: calculator-rem(32);
+    }
+
+    h3 {
+      margin-top: calculator-rem(72);
+      font-style: normal;
+      font-weight: 700;
+      font-size: calculator-rem(40);
+      line-height: 120%;
+      color: $tertiary-color;
+    }
+  }
+
+  &__card-content {
+    &--item {
+      background-color: $gray-8;
+      padding-top: calculator-rem(0);
+      padding-right: calculator-rem(38);
+      padding-bottom: calculator-rem(24);
+      padding-left: calculator-rem(38);
+      margin-top: calculator-rem(40);
+
+      &--wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .figma {
+          @include before-icon("\e917", 32px, $secondary-color) {
+          }
+        }
+
+        .code {
+          @include before-icon("\e90d", 32px, $secondary-color) {
+          }
+        }
+
+        .star {
+          @include before-icon("\e934", 32px, $secondary-color) {
+          }
+        }
+
+        .icon-arrow-right {
+          @include before-icon("\e902", 24px, $primary-color) {
+            display: block;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: calculator-rem(18);
+          }
+        }
+      }
+      h4 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: calculator-rem(24);
+        line-height: 120%;
+        color: $tertiary-color;
+        margin-top: calculator-rem(12);
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: calculator-rem(14);
+        line-height: 120%;
+        color: $gray-3;
+        margin-top: calculator-rem(12);
+      }
+    }
   }
 }

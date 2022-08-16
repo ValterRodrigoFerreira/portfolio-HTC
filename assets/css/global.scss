@@ -63,6 +63,16 @@ li {
   display: inline-block;
 }
 
+.icon {
+  width: 61px;
+  height: 84px;
+  background-color: $primary-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @import "partius/mixin";
 @import "partius/layout";
 @import "partius/buttons";
