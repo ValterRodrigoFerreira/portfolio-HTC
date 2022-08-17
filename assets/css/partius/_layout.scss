@@ -116,7 +116,7 @@
     }
 
     h3 {
-      margin-top: calculator-rem(72);
+      margin-top: calculator-rem(40);
       font-style: normal;
       font-weight: 700;
       font-size: calculator-rem(40);
@@ -178,6 +178,123 @@
         line-height: 120%;
         color: $gray-3;
         margin-top: calculator-rem(12);
+      }
+    }
+  }
+}
+
+.experience-content {
+  &__card-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: calculator-rem(40);
+    &--item {
+      padding-top: calculator-rem(37);
+      padding-bottom: calculator-rem(37);
+      padding-left: calculator-rem(44);
+      padding-right: calculator-rem(44);
+      background-color: $gray-8;
+
+      h4 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: calculator-rem(24);
+        line-height: 120%;
+        color: $tertiary-color;
+        margin-top: calculator-rem(40);
+      }
+      &--empresa {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: calculator(16);
+        line-height: 120%;
+        color: $tertiary-color;
+        margin-top: calculator-rem(16);
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: calculator-rem(18);
+        line-height: 120%;
+        color: $gray-3;
+        margin-top: calculator-rem(24);
+      }
+
+      &--date {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: calculator-rem(14);
+        line-height: 120%;
+        color: $gray-3;
+        margin-top: calculator-rem(40);
+      }
+
+      &--wrapper {
+        position: relative;
+
+        .experience-circle {
+          width: calculator-rem(29);
+          height: calculator-rem(29);
+          background-color: $tertiary-color;
+          opacity: 0.3;
+          border-radius: 50%;
+        }
+
+        .experience-icon {
+          position: absolute;
+          top: -48%;
+          left: 3.4%;
+        }
+
+        .monitor {
+          @include before-icon("\e92b", 32px, $tertiary-color) {
+          }
+        }
+
+        .figmaicon {
+          @include before-icon("\e917", 32px, $tertiary-color) {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+.portfolio {
+  max-width: $container-l;
+
+  &__cards {
+    display: flex;
+
+    &--wrapper {
+      margin-top: calculator-rem(40);
+
+      img {
+        width: 100%;
+        height: 285px;
+        object-fit: cover;
+      }
+
+      h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: calculator-rem(24);
+        line-height: 120%;
+        color: $gray-2;
+        margin-top: calculator-rem(32);
+      }
+
+      strong {
+        display: block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: calculator-rem(16);
+        line-height: 120%;
+        color: $gray-7;
+        margin-top: calculator-rem(16);
       }
     }
   }

@@ -1,0 +1,140 @@
+.footer {
+  background-color: $tertiary-color;
+  height: 572px;
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: $container-l;
+    padding-top: calculator-rem(72);
+    padding-bottom: calculator-rem(72);
+    padding-left: calculator-rem(0);
+    padding-right: calculator-rem(0);
+  }
+  &__left {
+    img {
+      width: calculator-rem(124);
+      height: calculator-rem(124);
+      border-radius: 50%;
+      border: 4px solid $secondary-color;
+    }
+
+    h4 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: calculator-rem(32);
+      line-height: 120%;
+      color: $gray-8;
+      margin-top: calculator-rem(12);
+    }
+
+    span {
+      display: block;
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-7;
+      margin-top: calculator-rem(12);
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: calculator-rem(18);
+      line-height: 120%;
+      color: $gray-7;
+      margin-top: calculator-rem(24);
+    }
+    &--socials {
+      display: flex;
+
+      align-items: center;
+      gap: calculator-rem(16);
+      margin-top: calculator-rem(32);
+
+      .social-icon {
+        width: calculator-rem(57);
+        height: calculator-rem(57);
+        background-color: $primary-color;
+        opacity: 0.3;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.5s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+
+          &:before {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      .instagram {
+        transition: 0.5 ease;
+        @include before-icon("\e924", 24px, $gray-8) {
+        }
+      }
+
+      .github {
+        transition: 0.5 ease;
+        @include before-icon("\e91b", 24px, $gray-8) {
+        }
+      }
+
+      .twitter {
+        transition: 0.5 ease;
+        @include before-icon("\e937", 24px, $gray-8) {
+        }
+      }
+    }
+  }
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: calculator-rem(32);
+  line-height: 120%;
+  color: $gray-8;
+}
+
+textarea {
+  resize: none;
+  width: 462px;
+  height: 48px;
+  background-color: $primary-color;
+  color: $gray-7;
+  opacity: 0.3;
+
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+
+  padding: 15px 315px 14px 25px;
+  margin-top: calculator-rem(24);
+}
+
+.text-area-msg {
+  width: 462px;
+  height: 125px;
+  background-color: $primary-color;
+  color: $gray-7;
+  opacity: 0.3;
+
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  padding: 22px 275px 84px 24px;
+}
+
+.text-area-enviar {
+  scrollbar-width: none;
+  color: $gray-7;
+  resize: none;
+  opacity: 0.5;
+  border: 1px solid $secondary-color;
+  border-radius: 15px;
+}
