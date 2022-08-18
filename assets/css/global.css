@@ -749,6 +749,7 @@ textarea {
   border-radius: 5px;
   padding: 15px 315px 14px 25px;
   margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 .text-area-msg {
@@ -758,17 +759,22 @@ textarea {
   color: #a3a3a3;
   opacity: 0.3;
   border: 1px solid #f9aa33;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   padding: 22px 275px 84px 24px;
+  overflow: hidden;
 }
 
-.text-area-enviar {
-  scrollbar-width: none;
+.button-enviar {
+  background-color: #344955;
+  margin-top: 1.5rem;
+  margin-left: 17.1875rem;
+  width: 191px;
+  height: 63px;
   color: #a3a3a3;
-  resize: none;
   opacity: 0.5;
   border: 1px solid #f9aa33;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
+  overflow: hidden;
 }
 
 @-webkit-keyframes animate-icon-arrowdown {

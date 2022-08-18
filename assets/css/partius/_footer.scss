@@ -116,6 +116,7 @@ textarea {
 
   padding: 15px 315px 14px 25px;
   margin-top: calculator-rem(24);
+  overflow: hidden;
 }
 
 .text-area-msg {
@@ -126,15 +127,20 @@ textarea {
   opacity: 0.3;
 
   border: 1px solid $secondary-color;
-  border-radius: 5px;
+  border-radius: calculator-rem(5);
   padding: 22px 275px 84px 24px;
+  overflow: hidden;
 }
 
-.text-area-enviar {
-  scrollbar-width: none;
+.button-enviar {
+  background-color: $primary-color;
+  margin-top: calculator-rem(24);
+  margin-left: calculator-rem(275);
+  width: 191px;
+  height: 63px;
   color: $gray-7;
-  resize: none;
   opacity: 0.5;
   border: 1px solid $secondary-color;
-  border-radius: 15px;
+  border-radius: calculator-rem(15);
+  overflow: hidden;
 }
