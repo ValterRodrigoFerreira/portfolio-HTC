@@ -52,6 +52,7 @@
       line-height: calculator-rem(19);
       color: $complementary-color;
       transition: 0.3 ease;
+      bottom: calculator-rem(-105);
 
       writing-mode: vertical-lr;
 
@@ -66,7 +67,7 @@
         position: absolute;
         display: block;
         left: 15%;
-        bottom: calculator-rem(-175);
+        bottom: calculator-rem(-170);
         pointer-events: none;
       }
     }

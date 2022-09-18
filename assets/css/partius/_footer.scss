@@ -10,6 +10,7 @@
     padding-left: calculator-rem(0);
     padding-right: calculator-rem(0);
   }
+
   &__left {
     img {
       width: calculator-rem(124);
@@ -86,9 +87,9 @@
         }
       }
 
-      .twitter {
+      .linkedin {
         transition: 0.5 ease;
-        @include before-icon("\e937", 24px, $gray-8) {
+        @include before-icon("\e926", 24px, $gray-8) {
         }
       }
     }
@@ -143,4 +144,45 @@ textarea {
   border: 1px solid $secondary-color;
   border-radius: calculator-rem(15);
   overflow: hidden;
+}
+
+.footer_copy {
+  border-top: 1px solid #444444;
+  max-width: 99vw;
+  margin-top: 426px;
+
+  &__By {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #a3a3a3;
+    background-color: #232f34;
+  }
+}
+
+.copyrightname {
+  margin-left: 349px;
+}
+
+.button-backtop {
+  margin-right: 465px;
+  cursor: pointer;
+  color: $gray-7;
+
+  &::after {
+    display: inline-block;
+    font-family: "icomoon";
+    content: "\e903";
+    font-size: 32px;
+    color: #fbfafa;
+    font-style: normal;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: $gray-7;
+  }
 }
