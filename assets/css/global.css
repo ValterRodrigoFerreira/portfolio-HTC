@@ -261,6 +261,11 @@ li {
   max-width: 2rem;
   display: inline-block;
 }
+@media screen and (max-width: 1102px) {
+  .hero__headline h3 img__headline img {
+    flex-wrap: wrap;
+  }
+}
 .hero__headline--wrapper {
   margin-top: 3rem;
   display: flex;
@@ -511,6 +516,9 @@ li {
   line-height: 120%;
   color: #2c2c2c;
   margin-top: 2rem;
+}
+.portfolio__cards--wrapper h3:hover {
+  color: #f9aa33;
 }
 .portfolio__cards--wrapper strong {
   display: block;
