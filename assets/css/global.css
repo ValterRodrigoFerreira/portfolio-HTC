@@ -508,6 +508,10 @@ li {
   height: 285px;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 0.1875rem solid white;
+}
+.portfolio__cards--wrapper img:hover {
+  border: 0.1875rem solid #f9aa33;
 }
 .portfolio__cards--wrapper h3 {
   font-style: normal;

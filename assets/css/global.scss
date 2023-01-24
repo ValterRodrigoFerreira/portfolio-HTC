@@ -74,7 +74,7 @@ li {
 }
 
 @import "partius/mixin";
-@import "partius/layout";
+@import "./partius/_layout.scss";
 @import "partius/buttons";
 @import "partius/header";
 @import "partius/footer";
